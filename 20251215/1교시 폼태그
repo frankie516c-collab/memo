@@ -1,0 +1,132 @@
+#폼 태그
+```HTML
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>폼 알아보기</title>
+</head>
+<body>
+	<h1>폼 알아보기</h1>
+	<ul>
+		<li><a href="page1.html" target="_blank">input</a></li>
+		<li><a href="page2.html" target="_blank">radio, checkbox</a></li>
+		<li><a href="page3.html" target="_blank">select, textarea</a></li>
+	</ul>
+</body>
+</html>
+```
+
+#page1
+```HTML
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>form</title>
+</head>
+<body>
+	<h1>form</h1>
+  <form action="result.html" method="get">
+    <label for="userId">아이디 : </label>
+    <input type="text" name="userId" id="userId">
+    <input type="submit" value="인증요청">
+  </form>
+</body>
+</html>
+```
+- get 방식으로 되어 있고 눌렀을 때 result로 이동(*화면 전환*): a태그와 비슷
+- 폼에 입력 방식이 있다면 get을 사용해야함
+
+#page2
+```HTML
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>form</title>
+</head>
+<body>
+	<h1>form</h1>
+	<form action="result.html" method="get">
+		<div>
+			<label for="userId">아이디 : </label>
+			<input type="text" name="userId" id="userId">
+		</div>
+		<div>
+			<span>성별 : </span>
+			<label for="male">남</label>
+			<input type="radio" name="gender" id="male" value="male" checked>
+			<label for="female">여</label>
+			<input type="radio" name="gender" id="female" value="female">
+		</div>
+		<div>
+			<span>취미 :</span>
+			<label for="reading">독서</label>
+			<input type="checkbox" name="hobby1" id="reading" value="reading" checked>
+			<label for="movie">영화감상</label>
+			<input type="checkbox" name="hobby2" id="movie" value="movie">
+		</div>
+			
+		<div>
+			<input type="submit" value="전송">
+		</div>
+	</form>
+</body>
+</html>
+```
+- 65: 라디오박스는 택1만 가능
+- 72: 체크박스는 여러개 선택하거나 아무것도 선택 안해도 되는 것
+
+#page3
+```HTML
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>form</title>
+</head>
+<body>
+	<h1>폼 태그</h1>
+    <form action="result.html" method="get">
+		<fieldset>
+			<legend>회원 가입</legend>
+			<p>
+				<label for="userName">이름 : </label>
+				<input type="text" id="userName" name="userName">
+			</p>
+			<p>
+				<label for="city">거주지역 : </label>
+				<select name="city" id="city" size="1" multiple>
+					<option value="seoul">서울</option>
+					<option value="inchen">인천</option>
+					<option value="daegu" selected>대구</option>
+					<option value="jeju">제주</option>
+				</select>
+			</p>
+			<p>
+				<label for="infor">간단한 소개</label> <br>
+				<textarea name="infor" id="infor" cols="30" rows="5"></textarea>
+			</p>
+		</fieldset>
+		<p>
+			<input type="reset" value="취소">
+			<input type="submit" value="전송">
+		</p>
+  
+  </form>
+</body>
+</html>
+```
+- 108: 여러개의 선택지 중에서 몇 개(multiple이라고 설정했으니)를 고를 수 있음 (옵션이 미리 있는거)
+- 117: textarea는 장문을 쓸 수 있기 때문에 네모칸을 자유롭게 크기를 늘릴 수 있음
+- 117: javascript를 쓸 경우 글자수에 따라 칸이 자동으로 늘어남
+
