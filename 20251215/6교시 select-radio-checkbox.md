@@ -56,4 +56,55 @@
 - 불만 있으면 뭔지 모르니까 `label`을 기입해줌
 
 - 체크박스는 다중선택이 가능
-- 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <select name="txt">
+      <option value="0">선택하세요</option>
+      <option value="1">삼성</option>
+      <option value="2">금성</option>
+      <option value="3">목성</option>
+      <option value="4">토성</option>
+    </select>
+    <select name="item">
+      <optgroup label="삼성">
+        <option>Z플립</option>
+        <option>겔럭시</option>
+      </optgroup>
+      <optgroup label="애플">
+        <option>MacBook</option>
+        <option>Mac Mini</option>
+      </optgroup>
+    </select>
+
+    <hr />
+
+    <div>
+      <label for="r1">사과</label>
+      <input type="radio" name="radio" id="r1" value="r1" checked/>
+      <label for="r2">바나나</label>
+      <input type="radio" name="radio" id="r2" value="r2" />
+      <label for="r3">귤</label>
+      <input type="radio" name="radio" id="r3" value="r3" />
+    </div>
+
+    <hr />
+
+    <div>
+      <input type="checkbox" name="checkbox" value="c1" checked />
+      <input type="checkbox" name="checkbox" value="c2" />
+      <input type="checkbox" name="checkbox" value="c3" />
+    </div>
+
+    <button type="submit">요청</button>
+  </form>
+</body>
+</html>
+```
