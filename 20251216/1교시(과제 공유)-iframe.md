@@ -65,6 +65,28 @@
 - `background-color: #ff0;`: 동일한 이유로 얘가 적용이 되지 않음
 - `background-color: aqua;`: 동일한 이유로 얘가 적용이 됨 덮어씌어짐
 
+- `div.first-class>span`: 스타일에 해당 명령어는 아래 부분에 적용 됨
+```html
+    <div class="first-class">
+      <span>span tag1</span>
+```
+- `div. first-class>span`: 띄어쓰기를 하면 적용이 안 됨
+- `div. first-class>span, p`: p 값이 블록으로 다 채워지기 때문에 글자만큼 하이라이트가 되는게 아닌 줄 전체가 하이라이트가 됨. 이를 해결하기 위해서는 아래에
+```html
+div.first-class>span, p {
+			background-color: #ff0;
+			display: inline-block
+```
+이렇게 추가하고 이를 통해 `span tag1`과 `span tag2`가 같은 줄에 오는건
+```html
+    <div class="first-class">
+      <span>span tag1</span><br />
+      <p>
+        <span>span tag2</span>
+      </p>
+    </div>
+```
+`<br />`을 넣어서 해결함
 
 #선택자 study06_page2
 ```html
@@ -137,6 +159,36 @@
 </html>
 ```
 - `p:hover, div:hover`: 쉼표를 이용해서 div도 할 수 있고 아래 div를 p로 바꿔도 됨
+
+#선택자사용 study06_page6
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>선택자 사용법 6</title>
+	<style>
+		p::first-letter {
+			font-size: 2em; 
+			font-weight: bold;
+			color: navy;
+		}
+		div::first-line {
+			color: red;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>pseudo-element</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic asperiores obcaecati illo animi fugit, commodi molestiae magnam iusto unde distinctio, voluptates consequatur eaque assumenda, debitis vitae! Mollitia molestias at numquam.</p>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus quis enim necessitatibus, itaque voluptas labore pariatur, atque mollitia nemo beatae soluta aperiam? Ipsam iste, dignissimos ipsa facilis quibusdam eligendi.</div>
+</body>
+</html>
+```
+- `font-size: 2em;`: 글자를 두배로 키우는 것
 
 #선택자사용 study06_page7
 ```html
