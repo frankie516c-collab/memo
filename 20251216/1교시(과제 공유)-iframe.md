@@ -102,3 +102,26 @@
 </body>
 </html>
 ```
+#선택자사용 study06_page4
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../../images/logo.png"/>
+	<title>선택자 사용법 4</title>
+	<style>
+		/* 첫 번째 단락에 마우스를 올렸을 때 */
+		p:hover, div:hover{ <--쉼표를 이용해서 div도 할 수 있고 아래 div를 p로 바꿔도 됨-->
+			background-color: aqua;
+		}
+	</style>
+</head>
+<body>
+	<h1>pseudo-class</h1>
+  <p>첫 번째 단락. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eum? Quasi, labore provident nulla molestias ratione eligendi iusto, sit blanditiis nihil, hic impedit optio architecto repellendus voluptate temporibus nobis porro.</p>
+  <div>두 번째 단락. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, delectus tenetur ut magni et saepe beatae totam eligendi, explicabo autem excepturi nesciunt maxime assumenda enim? Ad aut sint impedit quas.</div>
+</body>
+</html>
+```
