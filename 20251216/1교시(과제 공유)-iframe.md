@@ -86,7 +86,7 @@
 		a[href$="net/"]{ <--a태그 사용하고 주소 끝나는 $를 이용해 폰트 색이 적용 됨-->
 			color:red;
 		}
-		li[title*="ip"]{
+		li[title*="ip"]{ <--ip라는 글자가 들어가는거만 아쿠아로 적용-->
 			color:aqua;
 		}
 	</style>
