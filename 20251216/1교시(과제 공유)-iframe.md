@@ -25,13 +25,13 @@
 			color:#f00; <-- 얘가 뒤에 나와서 superior하게 적용되기 때문 마지막꺼가 적용됨-->
 		}
 		div>span {
-			color:#999; <--동일한 이유로 얘가 적용이 되지 않음-->
+			color:#999; 
 		}
 		div.first-class>span{
-			background-color: #ff0; <--동일한 이유로 얘가 적용이 됨 덮어씌어짐-->
+			background-color: #ff0; <--동일한 이유로 얘가 적용이 되지 않음-->
 		}
 		#ex span{
-			background-color: aqua;
+			background-color: aqua; <--동일한 이유로 얘가 적용이 됨 덮어씌어짐-->
 		}
 		h1, h2 {
 			border-style: solid;
