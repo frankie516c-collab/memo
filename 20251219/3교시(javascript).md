@@ -36,6 +36,9 @@ script 태그 사용법
         - e.g., 5 == "5" : ture (같은 값이니까)
         - e.g., 5 === "5" : false (숫자와 문자니까)
     - 특이점: 사칙연산 외 나머지와 몫도 구할 수 있음
+- 변수 선언
+  - typeof num === "boolean": true (자료형을 비교하는 것)
+    	- typeof란? 자료형을 문자열로 반환하는 연산자
 ```
 <!DOCTYPE html>
 <html lang="ko">
@@ -61,7 +64,7 @@ script 태그 사용법
 		- ...
 		*/
 
-		// [변수선언]
+		// [변수선언] <!--변할 수 있는 수-->
 		// var 변수명;
 		var num;
 		document.write('num >>' +num);
@@ -102,4 +105,43 @@ script 태그 사용법
 <body>
 </body>
 </html>
+```
+
+F12 창 console 입력 실험
+```
+typeof num;
+'boolean'
+typeof num == "boolean"
+    
+true
+typeof num === "boolean"
+true
+num = 안녕
+VM717:1 Uncaught ReferenceError: 안녕 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM717:1Understand this error
+num = 안녕;
+VM754:1 Uncaught ReferenceError: 안녕 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM754:1Understand this error
+var num;
+undefined
+typeof num;
+'boolean'
+num = 100
+100
+typeof num
+'number'
+num = 안녕
+VM893:1 Uncaught ReferenceError: 안녕 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM893:1Understand this error
+num = "안녕"
+'안녕'
+typeof num 
+'string'
+num = true;
+true
+typeof num;
+'boolean'
 ```
