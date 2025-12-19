@@ -108,8 +108,5 @@ script 태그 사용법
 ```
 
 F12 창 console 입력 실험
-![Uploading 캡처.PNG…]()
+<img width="980" height="1040" alt="캡처" src="https://github.com/user-attachments/assets/f04d1428-6fa3-495b-8190-8eab8eac057b" />
 
-typeof num;
-'boolean'
-```
