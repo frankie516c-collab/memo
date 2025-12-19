@@ -1,20 +1,28 @@
-Javascript=ECMAScript=ES=Jas<br />
-Node.js: browser console용에서 서버용으로 진출=풀스택 가능해짐<br />
-                                              Javascript는 백엔드에 사용하는데 한계가 있음<br />
-                                              e.g., 큰 회사의 홈페이지 만들기 어려움<br />
-                                              그래서 React를 배움<br />
-React, Vue, Angular로 SPA 개발 가속<br />
-                      Single Page Application (html 하나로 끝)<br />
+<h1>Javascript</h1>
+- ECMAScript=ES=Jas<br />
+- Node.js: browser console용에서 서버용으로 진출=풀스택 가능해짐<br />
+- Javascript는 백엔드에 사용하는데 한계가 있음<br />
+- e.g., 큰 회사의 홈페이지 만들기 어려움<br />
+- 그래서 React를 배움<br />
+- React, Vue, Angular로 SPA* 개발 가속<br />
+* Single Page Application (html 하나로 끝)<br />
+<br />
 ES6(2015) 이후: 혁신적 변화 https://www.w3schools.com/js/js_es6.asp<br />
-
-**내 목표**<br />
+<br />
+<h2>내 목표</h2>
 (6) 데이터 시각화 / 머신러닝<br />
     D3.js, Chart.js, ECharts 등을 통한 실시간 데이터 시각화<br />
     TensorFlow.js → 브라우저 머신러닝 모델 실행 가능<br />
+<br />
+<h3>var</h3>
+(1) let / const 블록 범위 변수 선언
 
-var<br />
-let: 바껴도 됨<br />
-get: 상수 (값 변경 불가) <- ES6이후 들어옴<br />
+- 기존 var는 함수 스코프 → 예측 어려움
+- ES6부터는 블록 단위 스코프 지원
+
+- let: 바껴도 됨<br />
+- get: 상수 (값 변경 불가) → ES6이후 들어옴<br />
+
 ```
 let a = 10;
 const b = 20;
@@ -24,14 +32,14 @@ b = 40; // ❌ TypeError: const 값 변경 불가
 ```
 
 (2) 템플릿 문자열 (Template Literals) = 포맷<br />
-- 문자열 연결을 + 대신 `로 표현 + 변수 내삽<br />
+- 문자열 연결을 `+` 대신 ```로 표현 + 변수 내삽<br />
 ```
 const name = "Tom";
 console.log(`Hello, ${name}!`); // Hello, Tom
 ```
 
 (3) 화살표 함수 (Arrow Function)<br />
-- 깔끔한 함수 표현 + this 바인딩 자동<br />
+- 깔끔한 함수 표현 + `this` 바인딩 자동<br />
 ```
 const add = (a, b) => a + b;
 console.log(add(2, 3)); // 5
