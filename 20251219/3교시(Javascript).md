@@ -110,3 +110,14 @@ script 태그 사용법
 F12 창 console 입력 실험
 <img width="980" height="1040" alt="캡처" src="https://github.com/user-attachments/assets/f04d1428-6fa3-495b-8190-8eab8eac057b" />
 
+20251222<br />
+헷갈린거 정리<br />
+위 코드는 같은 변수에 서로 다른 값이 들어갈 때 javascript가 그 값을 어떤 자료형으로 판단하는지를 보여주는 예제라서 스크린캡쳐에 나온 값은 javascript의 자료형 판단 규칙 때문에 나오는 것.<br />
+**자바스크립트에서는 변수의 타입이 고정되지 않고, 값이 바뀔 때마다 typeof 결과도 함께 바뀐다.**<br />
+<br />
+Javascript의 핵심 개념 2가지<br />
+1. 동적 타입의 언어<br />
+- 변수에 자료형을 미리 정하지 않음<br />
+- "값이 무엇이냐"에 따라 자동으로 결정 됨<br />
+e.g., `var num;`에서는 아직 `num`이 어떤 타입인지 정해지지 않음<br />
+`typeof`라는 연산자를 사용해서 `typeof 값`을 입력하면 **해당 값의 자료형을 문자열로 반환**함<br />
