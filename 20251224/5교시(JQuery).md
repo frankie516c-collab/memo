@@ -98,8 +98,8 @@ function b() {
 ```
 <img width="591" height="249" alt="image" src="https://github.com/user-attachments/assets/4c213fdb-c73a-4d32-a2bb-89524642f62f" />
 
-`function fn() {}`: 함수
-`() {}`: callback함수 = 익명함수 /* 호출 할 때 쓰임 */
+`function fn() {}`: 함수 /호출을 하기 위한 역할/
+`() {}`: callback함수 = 익명함수 /일회용 역할/ = 실행 후 동작
 ```
 $(function(){
 console.log("study02.js");
@@ -109,7 +109,11 @@ function b() {
 });
 ```
 
-`const fn2 = ()  => {}`: arrow 함수
+`const fn2 = () => {}`: arrow 함수
+- const를 쓰는 **핵심 이유는 “변하지 않게 만들기 위해서” + “실수 방지”**
+- const로 선언한 변수는 다시 값을 바꿀 수 없음
+- 함수가 다른 걸로 바뀌는 걸 방지
+- 함수 이름이 고정된다는 걸 보장
 ```
 $(() => {
 console.log("study02.js");
@@ -130,3 +134,7 @@ $(document).ready(() => {
 });
 ```
 
+- 팁: JQuery를 잘 하기 위해선 함수를 구분해야 한다
+  - 일반 함수
+  - 익명 함수
+  - arrow 함수
