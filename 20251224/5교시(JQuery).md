@@ -66,7 +66,8 @@ console.log("study02.js");
   - study02.js
   - index.html >> end
 
-JQuery는 함수이기 때문에 다음과 같이 추가함
+JQuery는 함수이기 때문에 다음과 같이 추가함<br />
+
 study02.js
 ```
 $(function(){
@@ -79,8 +80,8 @@ console.log("study02.js");
   - study02.js
 
 <h2> 설정 </h2>
-이제는 **영역**을 나눠보는 작업
-영역을 나누는게 지역함수(b)와 같고 바깥에 있는게 전역함수(a)로 볼 수 있음
+이제는 **영역**을 나눠보는 작업<br />
+영역을 나누는게 지역함수(b)와 같고 바깥에 있는게 전역함수(a)로 볼 수 있음<br />
 
 study02.js
 ```
