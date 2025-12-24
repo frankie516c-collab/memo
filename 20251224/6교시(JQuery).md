@@ -105,3 +105,44 @@ $(document).ready(() => {
 5. 첫 번째 버튼이면
 6. view1() 실행
 7. section에 div 25개 생성
+
+```
+    $("button").off().on("click", function(e) {
+        console.log(e);
+```
+
+3번째 버튼까지 활성화 시키기 위해 1~3교시에 했던 `state = false`를 이용해서 코드 짜기
+```
+$(document).ready(() => {
+
+
+    function view1() {
+        var html = "";
+        for(let i = 0 ; i < 25; i++ ) {
+            let css = "1";
+            if( i% 2 === 0) css = "2"
+            html += `<div class="bg${css}"></div>`;
+        }
+    $("section").html(html);
+    state = true;
+    }
+    var state = false;
+    $("button").off().on("click", function(e) {
+        const index = $("button").index(e.target);
+        if(index === 0) {
+            view1();
+        } else if(index === 1) {
+            $("section").empty();
+            state = false;
+        } else if (index === 2) {
+            if(!state) view1();
+            else {
+                $("section").empty();
+                state = false;
+            }
+        }
+
+    });
+
+});
+```
