@@ -80,3 +80,4 @@ export function controller(req) {
     res.end(html);
   ```
   
+**uri의 형식이 아닌 url을 사용. 또, uri는 정적파일로 대상까지만 가는건데 그것은 path로만 사용하는 것이 핵심**
